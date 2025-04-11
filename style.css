@@ -151,9 +151,4 @@ h1 {
   
 }
 
-.card {
-    width: 50px;
-    height: 50%;
-    margin-left: 70%;  /* Moves the card 50px to the right */
-    margin-top:0px;   /* Moves the card 20px down */
-}
+

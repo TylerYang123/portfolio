@@ -1,0 +1,14 @@
+.card1 {
+    width: 100px;
+    height: 100%;
+    margin-left: 80%;  /* Moves the card 50px to the right */
+    margin-top:0px;   /* Moves the card 20px down */
+   
+}
+
+.card2{
+    width: 100px;
+    height: 100%;
+    margin-left: 80%;  /* Moves the card 50px to the right */
+    margin-top:0px;   /* Moves the card 20px down */
+}
