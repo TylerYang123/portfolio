@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+  }
+  
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Overall Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    margin: 0 40px;
+}
+
+/* .milky: Center the image horizontally and vertically */
+.milky {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+  
+}
+
+.milky img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;  /* Make sure the image covers the container */
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 20px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    justify-content: center;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar .menu-toggle .bar {
+    width: 25px;
+    height: 4px;
+    margin: 4px 0;
+    background-color: #fff;
+}
+
+/* Nav Links Styling */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #444;
+    border-radius: 4px;
+}
+
+/* Mobile Menu Styling */
+@media screen and (max-width: 768px) {
+    .navbar .menu-toggle {
+        display: flex;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #333;
+        width: 200px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 15px;
+        text-align: right;
+    }
+
+    .nav-links a {
+        font-size: 20px;
+        padding: 12px;
+    }
+}
+body {
+    background-color: #000000; /* black background color */
+}
+/* CSS file */
+body {
+    color: white; /* All text on the page will be white */
+    background-color: #000000; /* Dark background to see white text */
+}
+
+h1 {
+    color: white; /* Specific header text color */
+}
+
+#about {
+    color: white; /* Makes text inside the about section white */
+}
+/* Reducing letter spacing to make text squished */
+/* Apply squished text style */
+.squished-text {
+    letter-spacing: -3px;  /* Adjust to make characters closer together */
+    word-spacing: -4px;    /* Adjust to make words closer together */
+}
+
+.container{
+  display: flex;
+    justify-content: right;
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 50%;
+  
+}
+
+
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    justify-content: space-between;
+  }
+  
+  .gallery-grid img {
+    width: 100%;
+    height: auto;
+    border: 2px solid white;
+  }
+  
+  .arrow-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: #333;
+  }
+  
+  .arrow {
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .thumbnail-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #000;
+  }
+  
+  .thumbnail-row img {
+    width: 80px;
+    height: auto;
+    border: 2px solid white;
+  }
