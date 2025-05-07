@@ -1,0 +1,25 @@
+
+
+.photo-row {
+display: flex;
+justify-content: center; /* centers the row */
+gap: 40px; /* space between items */
+padding: 40px;
+flex-wrap: wrap; /* allow wrap on small screens */
+}
+
+.project {
+text-align: center;
+max-width: 300px;
+}
+
+.project img {
+width: 100%;
+height: auto;
+border: 2px solid white;
+}
+
+.project-title {
+margin-top: 10px;
+font-weight: bold;
+}
