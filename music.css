@@ -214,4 +214,9 @@ h1 {
     display:flex ;
     justify-content: center;
   }
+  .album{
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+  }
   
