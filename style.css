@@ -134,6 +134,8 @@ h1 {
 
 #about {
     color: white; /* Makes text inside the about section white */
+    border: #fff;
+    
 }
 /* Reducing letter spacing to make text squished */
 /* Apply squished text style */
@@ -181,4 +183,8 @@ h1 {
     cursor: pointer;
   }
 
+    .card{
+       
+     
+    }
 
