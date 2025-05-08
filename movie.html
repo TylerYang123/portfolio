@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="music.css">
+    <link rel="stylesheet" href="movie.css">
     <script src="style.js"></script>
 </head>
 <body>
@@ -29,8 +29,26 @@
     </header>
     <div class="text">
    <h2>Welcome to the Theater</h2>
+   
     </div>
     <main>
+
+   
+
+<div id="popup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <h2>Movie Night!</h2>
+    <p>Grab your popcorn and enjoy the show 🎬</p>
+  </div>
+</div>
+
+        <div class="spiderman">
+            <img src="livespiderman.gif" alt="spiderman" style="height: 269px;">
+            <img src="creedgif.gif" alt="spiderman">
+            <img src="tokyodrift.gif" alt="spiderman" style="height: 269px;">
+        </div>
+
         <section class="gallery-grid">
           <img src="naruto.png" alt="Movie 1" />
           <img src="fast1.png" alt="Movie 2" />
@@ -43,17 +61,13 @@
           <img src="karate.png" alt="Movie 3" />
           <img src="batman.png" alt="Movie 3" />
           <img src="shrek.png" alt="Movie 3" />
+          <img src="longestyard.png" alt="Movie 3" />
+          <img src="creed3.png" alt="Movie 3" />
+          <img src="pokemon 1.png" alt="Movie 3" />
+          <img src="transformers.png" alt="Movie 3" />
           <img src="forestgump.png" alt="Movie 3" />
-          
           <!-- Add more posters here -->
         </section>
-        <br>
-        <br>
-        <div class="spiderman">
-            <img src="livespiderman.gif" alt="spiderman">
-        </div>
-        <br>
-        <br>
         <section class="gallery-grid">
             <img src="creed-ii-adonis-creed-boxing-movie-poster-aesthetic-wall-decor 1.png" alt="Movie 1" />
             <img src="New-Initial-D-the-Movie-Legend1-Awakening-poster 1.png" alt="Movie 2" />
@@ -66,10 +80,31 @@
             <img src="godzilla.png" alt="Movie 3" />
             <img src="bat.png" alt="Movie 3" />
             <img src="Fast_and_Furious_Poster 1.png" alt="Movie 3" />
-            <img src="blackpanther.png" alt="Movie 3" />
+            <img src="hunterxhunter.png" alt="Movie 3" />
+            <img src="gran.png" alt="Movie 3" />
+            <img src="realsteel.png" alt="Movie 3" />
+            <img src="badboys.png" alt="Movie 3" />
+            <img src="bigdaddy.png" alt="Movie 3" />
+
             <!-- Add more posters here -->
           </section>
 
+          <script>
+            function openPopup() {
+              document.getElementById("popup").style.display = "flex";
+            }
+          
+            function closePopup() {
+              document.getElementById("popup").style.display = "none";
+            }
+          
+            // Run when page loads
+            window.onload = function() {
+              openPopup();
+            };
+          </script>
+          
+          
       
       </main>
     </body>

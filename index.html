@@ -28,6 +28,16 @@
         </nav>
     </header>
 
+    
+<div id="popup" class="popup-overlay">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h2>Hello there</h2>
+      <p>and welcome to Tylers Portfolio
+      </p>
+    </div>
+  </div>
+
     <div class="card">
         <img src="" alt="Avatar" style="width:100%">
         <h4><b>John Doe</b></h4>
@@ -50,8 +60,21 @@
             </h3>
         </div>
     </section>
-    <img src="Instagram_logo_2022.svg 1.png" alt="">
-    <script src="script.js"></script>
+    
+    <script>
+        function openPopup() {
+          document.getElementById("popup").style.display = "flex";
+        }
+      
+        function closePopup() {
+          document.getElementById("popup").style.display = "none";
+        }
+      
+        // Run when page loads
+        window.onload = function() {
+          openPopup();
+        };
+      </script>
     
 </body>
 </html>

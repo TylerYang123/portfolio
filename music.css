@@ -162,18 +162,18 @@ h1 {
   
   .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
-    padding: 20px;
-    justify-content: space-around;
-    align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* wider cells */
+  gap: 20px;
+  padding: 20px;
+  justify-items: center; /* centers images inside each grid cell */
   }
   
   .gallery-grid img {
-    width: 100%;
+    width: 100%;  /* or set a max-width if needed */
     height: auto;
     border: 2px solid white;
-    justify-content: center;
+    display: block;  /* default display for images */
+    
   }
   
   .arrow-section {
@@ -204,28 +204,14 @@ h1 {
     border: 2px solid white;
   }
 
-  .spiderman{
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    
-  }
-
   .text{
     display: flex;
     justify-content: center;
     color: lightgrey;
   }
-  .photo{
-  display: flex;
-  justify-content: space-between; /* evenly spaced across the row */
-  align-items: center;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 10px;
-  padding: 20px;
-  justify-content: space-around;
-  align-items: center;
+
+  .small{
+    display:flex ;
+    justify-content: center;
   }
+  
