@@ -32,7 +32,7 @@ body {
 /* Navbar Styling */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #000000;
     padding: 20px 30px;
@@ -229,3 +229,22 @@ h1 {
         }
       }
       
+      .custom-button {
+        padding: 12px 24px;
+        background-color: white;
+        color: black;
+        border: 2px solid white;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      
+      .custom-button:hover {
+        background-color: black;
+        color: white;
+      }
+      .nav-logo {
+        height: 65px;
+      }

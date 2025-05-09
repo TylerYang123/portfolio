@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tyler Yang | Portfolio</title>
+  <link rel="stylesheet" href="start.css" />
+</head>
+<body>
+  <div class="text-box">
+    <p id="myParagraph"></p>
+    <button id="continueBtn" onclick="window.location.href='home.html'">Continue</button>
+  </div>
+
+  <script>
+    const text = "Hello there and welcome to Tyler's Personal Portfolio press here to continue";
+    let index = 0;
+
+    function typeWriter() {
+      const paragraph = document.getElementById("myParagraph");
+      const button = document.getElementById("continueBtn");
+
+      if (index < text.length) {
+        paragraph.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 50);
+      } else {
+        button.style.display = "inline-block";
+      }
+    }
+
+    window.onload = typeWriter;
+  </script>
+</body>
+</html>

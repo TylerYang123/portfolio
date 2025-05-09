@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+    color: white; /* Optional: makes text readable */
+  }
+  body {
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container for centering and border */
+  .text-box {
+    border: 2px solid white;
+    padding: 30px 40px;
+    border-radius: 10px;
+  }
+  
+  /* Typewriter text */
+  #myParagraph {
+    font-size: 30px;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-box {
+    text-align: center;
+    border: 2px solid white;
+    padding: 40px;
+    border-radius: 10px;
+  }
+
+  #myParagraph {
+    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  #continueBtn {
+    display: none;
+    background-color:black ;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+    border: 2px solid white;
+  }
