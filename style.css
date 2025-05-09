@@ -248,3 +248,14 @@ h1 {
       .nav-logo {
         height: 65px;
       }
+
+      .button-hi{
+      width: 15px;
+      height: 1px;
+        }
+
+        .resume{
+          display: flex;
+          justify-items: center;
+        }
+ 

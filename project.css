@@ -145,6 +145,7 @@
   
   .fade {
     animation: fadeEffect 1s ease-in-out;
+    
   }
   
   @keyframes fadeEffect {
@@ -236,6 +237,7 @@
       margin: 10px 0;
     }
   }
+  
   
 
   
