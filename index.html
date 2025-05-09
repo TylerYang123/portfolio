@@ -1,83 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="style.js"></script>
-</head>
-<body>
-    <header>
-        <div class="milky">
-            <img src="Milky-Way 2 (3).png" alt="header image">
-        </div>
-        <nav class="navbar">
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="index.html">ABOUT ME</a></li>
-                <li><a href="music.html">MUSIC</a></li>
-                <li><a href="car.html">CARS</a></li>
-                <li><a href="movie.html">MOVIES</a></li>
-                <li><a href="project.html">PROJECTS</a></li> 
-            </ul>
-        </nav>
-    </header>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tyler Yang | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="style.js"></script>
+  
+  <header>
+    <div class="milky">
+      <img src="Milky-Way 2 (3).png" alt="Milky Way Galaxy Header" />
+    </div>
+    <nav class="navbar">
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">ABOUT ME</a></li>
+        <li><a href="music.html">MUSIC</a></li>
+        <li><a href="car.html">CARS</a></li>
+        <li><a href="movie.html">MOVIES</a></li>
+        <li><a href="project.html">PROJECTS</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    
-<div id="popup" class="popup-overlay">
+  <!-- Popup Welcome Message -->
+  <div id="popup" class="popup-overlay">
     <div class="popup-content">
       <span class="close-btn" onclick="closePopup()">&times;</span>
       <h2>Hello there</h2>
-      <p>and welcome to Tylers Portfolio
-      </p>
+      <p>Welcome to Tyler's Portfolio!</p>
     </div>
   </div>
+
+  <!-- About Me Section -->
   <section id="about">
     <div class="container">
-        <h3> Hey There !</h3>
-        <br>
-        <h1>I'm Tyler Yang</h1>
-        <br>
-        <h3>
-            I'm a passionate web developer with a love for creating intuitive, user-friendly websites. 
-            With a background in coding and designing 
-            user-friendly websites, I specialize in front-end technologies like HTML and CSS. When I'm not coding, 
-            you can find me playing games, working on personal projects,
-            or enjoying outdoor activities like volleyball and hanging out with friends.
-        </h3>
+      <h3>Hey There!</h3>
+      <h1>I'm Tyler Yang</h1>
+      <p>
+        I'm a passionate web developer who loves creating intuitive, user-friendly websites. With a background in coding and design, I specialize in front-end technologies like HTML and CSS.
+        When I'm not coding, you’ll find me gaming, building personal projects, or enjoying volleyball and hanging out with friends.
+      </p>
     </div>
-</section>
-<button>
+  </section>
 
-</button>
-    <div class="card">
-        <img src="hellotyler.png" width="400" height="600" />
-    </div>
+  <!-- Image Card -->
+  <div class="card">
+    <img src="hellotyler.png" width="400" height="600" alt="Hello Tyler" />
+  </div>
 
-    <!-- Add other sections below -->
- 
-    
-    <script>
-        function openPopup() {
-          document.getElementById("popup").style.display = "flex";
-        }
-      
-        function closePopup() {
-          document.getElementById("popup").style.display = "none";
-        }
-      
-        // Run when page loads
-        window.onload = function() {
-          openPopup();
-        };
-      </script>
-    <footer>
-        
-    </footer>
+  <script>
+    function openPopup() {
+      document.getElementById("popup").style.display = "flex";
+    }
+
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+
+    window.onload = function() {
+      openPopup();
+    };
+  </script>
+
 </body>
 </html>
+<footer>
+    <footer class="footer">
+      <h3>Get In Touch</h3>
+      <br>
+      <h4>tyler.yang@student.cart.org</h4>
+      br
+      <h4>(559)-878-7362</h4>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">HOME</a>
+          <a href="index.html">ABOUT ME</a>
+          <a href="music.html">MUSIC</a>
+          <a href="car.html">CARS</a>
+          <a href="project.html">PROJECTS</a>
+        </div>
+        <p>&copy; 2025 Tyler Yang. All rights reserved.</p>
+      </footer>
+      

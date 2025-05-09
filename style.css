@@ -183,8 +183,49 @@ h1 {
     cursor: pointer;
   }
 
-    .card{
-       
-     
-    }
-
+    .footer {
+        background: #080808;
+        padding: 40px 20px;
+        text-align: center;
+        border-top: 1px solid #ddd;
+      }
+      
+      .footer .social-icons a {
+        margin: 0 10px;
+        color: #555;
+        font-size: 20px;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      
+      .footer .social-icons a:hover {
+        color: #000;
+      }
+      
+      .footer .footer-links {
+        margin: 20px 0;
+      }
+      
+      .footer .footer-links a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 14px;
+      }
+      
+      .footer .footer-links a:hover {
+        text-decoration: underline;
+      }
+      
+      .footer p {
+        color: #ffffff;
+        font-size: 13px;
+      }
+      
+      @media (max-width: 600px) {
+        .footer .footer-links a {
+          display: block;
+          margin: 10px 0;
+        }
+      }
+      
