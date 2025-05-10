@@ -27,15 +27,33 @@ document.addEventListener('mousemove', (e) => {
   cursor.style.top = e.clientY + 'px';
 });
 
-// Pokémon Generator
+// Pokémon Generator (Local Images)
 const pokemonList = [
-  "pokemon1.png", "pokemon2.png", "pokemon3.png", "pokemon4.png",
-  "pokemon5.png", "pokemon6.png", "pokemon7.png", "pokemon8.png",
-  "pokemon9.png", "pokemon10.png", "pokemon11.png", "pokemon12.png",
-  "pokemon13.png", "pokemon14.png", "pokemon15.png", "pokemon16.png",
-  "pokemon17.png", "pokemon18.png", "pokemon19.png", "pokemon20.png"
+  "pikachu.png", "rayquaza.png", "bulbasaur.png", "charizard.png", "gengar.png",
+  "mewtwo.png", "snorlax.png", "lucario.png", "eevee.png", "dragonite.png",
+  "charmander.png", "squirtle.png", "wartortle.png", "blastoise.png", "ivysaur.png",
+  "venusaur.png", "pidgey.png", "rattata.png", "zubat.png", "jigglypuff.png",
+  "wigglytuff.png", "meowth.png", "psyduck.png", "golduck.png", "machop.png",
+  "machoke.png", "machamp.png", "magnemite.png", "magneton.png", "doduo.png",
+  "dodrio.png", "seel.png", "dewgong.png", "grimer.png", "muk.png",
+  "shellder.png", "cloyster.png", "gastly.png", "haunter.png", "onix.png",
+  "drowzee.png", "hypno.png", "krabby.png", "kingler.png", "voltorb.png",
+  "electrode.png", "cubone.png", "marowak.png", "hitmonlee.png", "hitmonchan.png",
+  "lickitung.png", "koffing.png", "weezing.png", "rhyhorn.png", "rhydon.png",
+  "chansey.png", "tangela.png", "kangaskhan.png", "horsea.png", "seadra.png",
+  "goldeen.png", "seaking.png", "staryu.png", "starmie.png", "scyther.png",
+  "jynx.png", "electabuzz.png", "magmar.png", "pinsir.png", "tauros.png",
+  "magikarp.png", "gyarados.png", "lapras.png", "ditto.png", "vaporeon.png",
+  "jolteon.png", "flareon.png", "porygon.png", "omanyte.png", "omastar.png",
+  "kabuto.png", "kabutops.png", "aerodactyl.png", "articuno.png", "zapdos.png",
+  "moltres.png", "dratini.png", "dragonair.png", "umbreon.png", "espeon.png",
+  "sylveon.png", "leafeon.png", "glaceon.png", "ralts.png", "kirlia.png",
+  "gardevoir.png", "gallade.png", "riolu.png", "zorua.png", "zoroark.png",
+  "axew.png", "haxorus.png", "goodra.png", "tinkaton.png", "pawmi.png",
+  "sprigatito.png", "quaxly.png", "fuecoco.png", "ironvaliant.png", "miraidon.png"
 ];
 
+// Local image generator
 function generatePokemon() {
   const randomIndex = Math.floor(Math.random() * pokemonList.length);
   const selectedPokemon = pokemonList[randomIndex];
@@ -47,13 +65,10 @@ function generatePokemon() {
     console.error("Element with ID 'pokemon-img' not found.");
   }
 }
-function generatePokemon() {
-  const img = document.getElementById("pokemon-img");
-  const randomIndex = Math.floor(Math.random() * pokemonList.length);
-  img.src = `images/${pokemonList[randomIndex]}`;
-}
+
+// Live API generator (optional)
 const getRandomPokemon = async () => {
-  const randomId = Math.floor(Math.random() * 898) + 1; // 1 to 898
+  const randomId = Math.floor(Math.random() * 898) + 1; // Gen 1-8 range
   const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${randomId}`);
   const data = await response.json();
 

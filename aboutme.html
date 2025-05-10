@@ -59,7 +59,6 @@
           <h1>🎲 Random Pokémon Generator</h1>
           <br>
           <button onclick="generatePokemon()">Generate Pokémon</button>
-        </div>
       </div>
     </div>
   </section>
@@ -106,6 +105,13 @@
     cursor.style.left = e.clientX + "px";
     cursor.style.top = e.clientY + "px";
   });
+</script>
+<script>
+  function generatePokemon() {
+    const randomId = Math.floor(Math.random() * 898) + 1;
+    const img = document.getElementById("pokemon-img");
+    img.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${randomId}.png`;
+  }
 </script>
 </body>
 </html>
