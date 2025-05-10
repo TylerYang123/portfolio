@@ -3,79 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tyler Yang | ABOUT ME</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="style.js"></script>
-  
-  <header>
-    <div class="milky">
-      <img src="Milky-Way 2 (3).png" alt="Milky Way Galaxy Header" />
-    </div>
-    <nav class="navbar">
-      <div class="menu-toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="home.html">HOME</a></li>
-        <li><a href="index.html">ABOUT ME</a></li>
-        <li><a href="music.html">MUSIC</a></li>
-        <li><a href="car.html">CARS</a></li>
-        <li><a href="movie.html">MOVIES</a></li>
-        <li><a href="project.html">PROJECTS</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Popup Welcome Message -->
-  <div id="popup" class="popup-overlay">
-    <div class="popup-content">
-      <span class="close-btn" onclick="closePopup()">&times;</span>
-      <h2>Hello there</h2>
-      <p>Welcome to Tyler's Portfolio!</p>
-    </div>
+  <title>Tyler Yang | Portfolio</title>
+  <link rel="stylesheet" href="start.css" />
+</head>
+<body>
+  <div class="text-box">
+    <p id="myParagraph"></p>
+    <button id="continueBtn" onclick="window.location.href='home.html'" style="display: none;">Continue</button>
   </div>
+<div class="cursor"></div>
+  <script>
+    const text = "Hello there and welcome to Tyler's Personal Portfolio. Press here to continue.";
+    let index = 0;
 
-  <!-- About Me Section -->
-  <section id="about">
-    <div class="container">
-      <h3>Hey There!</h3>
-      <br>
-      <h1>I'm Tyler Yang</h1>
-      <br>
-     <h3>
-      and I'm a passionate web developer who loves creating intuitive, user-friendly websites. With a background in coding and design, I specialize in front-end technologies like HTML and CSS.
-        When I'm not coding, you’ll find me gaming, building personal projects, or enjoying volleyball and hanging out with friends.Some more hobbies that i enjoy are drawing fishing collecting cars and also collecting cards .
-     </h3>
-     <br>
-     <div class="button-hi">
-      <a href="resume.html">
-        <button>Resume</button>
-      </a>
-  </button>
-    </div>
-    </div>
-  </section>
+    function typeWriter() {
+      const paragraph = document.getElementById("myParagraph");
+      const button = document.getElementById("continueBtn");
 
+      if (index < text.length) {
+        paragraph.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 90);
+      } else {
+        button.style.display = "inline-block";
+      }
+    }
 
+    window.onload = typeWriter;
+  </script>
 </body>
 </html>
-<footer>
-    <footer class="footer">
-      <h3>Get In Touch</h3>
-      <br>
-      <h4>tyler.yang@student.cart.org</h4>
-      br
-      <h4>(559)-878-7362</h4>
-        </div>
-        <div class="footer-links">
-          <a href="home.html">HOME</a>
-          <a href="index.html">ABOUT ME</a>
-          <a href="music.html">MUSIC</a>
-          <a href="car.html">CARS</a>
-          <a href="project.html">PROJECTS</a>
-        </div>
-        <p>&copy; 2025 Tyler Yang. All rights reserved.</p>
-      </footer>
-      

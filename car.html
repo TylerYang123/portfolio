@@ -1,51 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="car.css">
-    <script src="style.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website</title>
+  <link rel="stylesheet" href="car.css" />
 </head>
-<body>
-    <header>
-        <div class="milky">
-            <img src="Milky-Way 2 (3).png" alt="header image">
-        </div>
-        <nav class="navbar">
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="home.html">HOME</a></li>
-                <li><a href="index.html">ABOUT ME</a></li>
-                <li><a href="music.html">MUSIC</a></li>
-                <li><a href="car.html">CARS</a></li>
-                <li><a href="movie.html">MOVIES</a></li>
-                <li><a href="project.html">PROJECTS</a></li> <!-- Corrected link -->
-            </ul>
-        </nav>
-    </header>
 
-        <div class="spin">
-    <img src="p911.gif" alt="">
-</div>
+<body>
+  <header>
+    <div class="milky">
+      <img src="Milky-Way 2 (3).png" alt="Milky Way Banner" />
+    </div>
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="aboutme.html">ABOUT ME</a></li>
+        <li><a href="music.html">MUSIC</a></li>
+        <li><a href="car.html">CARS</a></li>
+        <li><a href="movie.html">MOVIES</a></li>
+        <li><a href="project.html">PROJECTS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="texthead">
+      <h3>Welcome to the Car Garage</h3>
+    </section>
 <br>
-<footer class="footer">
+    <section class="spin">
+           <div class="gallery-item"><img src="p911.gif" alt="Car 1" /></div>
+    </section>
+    <section class="gallery">
+      <div class="gallery-item"><img src="eb67751d3d615076ded7396b01ea1e63 1.png" alt="Car 1" /></div>
+      <div class="gallery-item"><img src="1996.png" alt="Car 2" /></div>
+      <div class="gallery-item"><img src="1ef4b799831ae398355f485b8d35b145 1.png" alt="Car 3" /></div>
+      <div class="gallery-item"><img src="323627 1.png" alt="Car 4" /></div>
+      <div class="gallery-item"><img src="001.png" alt="Car 5" /></div>
+    </section>
+  </main>
+
+    <section class="gallery">
+      <div class="gallery-item"><img src="car1.png" alt="Car 1" /></div>
+      <div class="gallery-item"><img src="cars 1.png" alt="Car 2" /></div>
+      <div class="gallery-item"><img src="morecar.png" alt="Car 3" /></div>
+      <div class="gallery-item"><img src="gtr.png" alt="Car 4" /></div>
+      <div class="gallery-item"><img src="cars2.png" alt="Car 5" /></div>
+    </section>
+  </main>
+
+  <div class="cursor"></div>
+
+  <footer class="footer">
     <h3>Get In Touch</h3>
-    <br>
+    <br />
     <h4>tyler.yang@student.cart.org</h4>
-    <br>
     <h4>(559)-878-7362</h4>
-      </div>
-      <div class="footer-links">
-        <a href="home.html">HOME</a>
-        <a href="index.html">ABOUT ME</a>
-        <a href="music.html">MUSIC</a>
-        <a href="car.html">CARS</a>
-        <a href="project.html">PROJECTS</a>
-      </div>
-      <p>&copy; 2025 Tyler Yang. All rights reserved.</p>
-    </footer>
+    <br />
+    <div class="footer-links">
+      <a href="home.html">HOME</a>
+      <a href="aboutme.html">ABOUT ME</a>
+      <a href="music.html">MUSIC</a>
+      <a href="car.html">CARS</a>
+      <a href="project.html">PROJECTS</a>
+    </div>
+    <p>&copy; 2025 Tyler Yang. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript should go at the end for better performance -->
+  <script src="style.js"></script>
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobile-menu').addEventListener('click', function () {
+      document.getElementById('nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

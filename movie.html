@@ -1,145 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tyler Yang | MOVIES</title>
-    <link rel="stylesheet" href="movie.css">
-    <script src="style.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tyler Yang | MOVIES</title>
+  <link rel="stylesheet" href="movie.css" />
+  <script src="style.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <div class="milky">
-            <img src="Milky-Way 2 (3).png" alt="header image">
-        </div>
-        <nav class="navbar">
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-links" id="nav-links">
-              <li><a href="home.html">HOME</a></li>
-                <li><a href="index.html">ABOUT ME</a></li>
-                <li><a href="music.html">MUSIC</a></li>
-                <li><a href="car.html">CARS</a></li>
-                <li><a href="movie.html">MOVIES</a></li>
-                <li><a href="project.html">PROJECTS</a></li> <!-- Corrected link -->
-            </ul>
-        </nav>
-    </header>
-    <div class="text">
-   <h2>Welcome to the Theater</h2>
-   
+  <div class="cursor"></div>
+
+  <header>
+    <div class="milky">
+      <img src="Milky-Way 2 (3).png" alt="Header Image" />
     </div>
-    <main>
-
-   
-
-<div id="popup" class="popup-overlay">
-  <div class="popup-content">
-    <span class="close-btn" onclick="closePopup()">&times;</span>
-    <h2>Movie Night!</h2>
-    <p>Grab your popcorn and enjoy the show 🎬</p>
-  </div>
-</div>
-
-        <div class="spiderman">
-            <img src="livespiderman.gif" alt="spiderman" style="height: 269px;">
-            <img src="creedgif.gif" alt="spiderman">
-            <img src="tokyodrift.gif" alt="spiderman" style="height: 269px;">
-        </div>
-
-        <section class="gallery-grid">
-          <img src="naruto.png" alt="Movie 1" />
-          <img src="fast1.png" alt="Movie 2" />
-          <img src="fast2.png" alt="Movie 3" />
-          <img src="spiderman1.png" alt="Movie 3" />
-          <img src="spiderman2.png" alt="Movie 3" />
-          <img src="fast3.png" alt="Movie 3" />
-          <img src="iornman.png" alt="Movie 3" />
-          <img src="siderman3.png" alt="Movie 3" />
-          <img src="karate.png" alt="Movie 3" />
-          <img src="batman.png" alt="Movie 3" />
-          <img src="shrek.png" alt="Movie 3" />
-          <img src="longestyard.png" alt="Movie 3" />
-          <img src="creed3.png" alt="Movie 3" />
-          <img src="pokemon 1.png" alt="Movie 3" />
-          <img src="transformers.png" alt="Movie 3" />
-          <img src="forestgump.png" alt="Movie 3" />
-          <!-- Add more posters here -->
-        </section>
-
-        <div class="moviebr">
-            <iframe 
-            width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/4WKHNNtVbUM" style="width: 1500px; height: 400px;"
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-          </iframe>
+    <nav class="navbar">
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="aboutme.html">ABOUT ME</a></li>
+        <li><a href="music.html">MUSIC</a></li>
+        <li><a href="car.html">CARS</a></li>
+        <li><a href="movie.html">MOVIES</a></li>
+        <li><a href="project.html">PROJECTS</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <div class="text">
+    <h2>Welcome to the Theater</h2>
+  </div>
 
-        <section class="gallery-grid">
-            <img src="creed-ii-adonis-creed-boxing-movie-poster-aesthetic-wall-decor 1.png" alt="Movie 1" />
-            <img src="New-Initial-D-the-Movie-Legend1-Awakening-poster 1.png" alt="Movie 2" />
-            <img src="hulk.png" alt="Movie 3" />
-            <img src="marvel.png" alt="Movie 3" />
-            <img src="carsmovie.png" alt="Movie 3" />
-            <img src="spiderman4.png" alt="Movie 3" />
-            <img src="sinner.png" alt="Movie 3" />
-            <img src="onepiece.png" alt="Movie 3" />
-            <img src="godzilla.png" alt="Movie 3" />
-            <img src="bat.png" alt="Movie 3" />
-            <img src="Fast_and_Furious_Poster 1.png" alt="Movie 3" />
-            <img src="hunterxhunter.png" alt="Movie 3" />
-            <img src="gran.png" alt="Movie 3" />
-            <img src="realsteel.png" alt="Movie 3" />
-            <img src="badboys.png" alt="Movie 3" />
-            <img src="bigdaddy.png" alt="Movie 3" />
+  <main>
+    <!-- Popup -->
+    <div id="popup" class="popup-overlay">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Movie Night!</h2>
+        <p>Grab your popcorn and enjoy the show 🎬</p>
+      </div>
+    </div>
 
-            <!-- Add more posters here -->
-          </section>
+    <!-- Gifs -->
+    <div class="spiderman">
+      <img src="livespiderman.gif" alt="Live Spiderman" style="height: 269px;" />
+      <img src="creedgif.gif" alt="Creed Boxing GIF" />
+      <img src="tokyodrift.gif" alt="Tokyo Drift GIF" style="height: 269px;" />
+    </div>
 
-          <script>
-            function openPopup() {
-              document.getElementById("popup").style.display = "flex";
-            }
-          
-            function closePopup() {
-              document.getElementById("popup").style.display = "none";
-            }
-          
-            // Run when page loads
-            window.onload = function() {
-              openPopup();
-            };
-          </script>
-          
-          
-    <br>
-    <br>
-          
-      
-      </main>
-    </body>
-    </html>
-    <footer class="footer">
-      <h3>Get In Touch</h3>
-      <br>
-      <h4>tyler.yang@student.cart.org</h4>
-      <br>
-      <h4>(559)-878-7362</h4>
-        </div>
-        <div class="footer-links">
-          <a href="home.html">HOME</a>
-          <a href="index.html">ABOUT ME</a>
-          <a href="music.html">MUSIC</a>
-          <a href="car.html">CARS</a>
-          <a href="project.html">PROJECTS</a>
-        </div>
-        <p>&copy; 2025 Tyler Yang. All rights reserved.</p>
-      </footer>
+    <!-- Gallery Section 1 -->
+    <section class="gallery-grid">
+      <img src="naruto.png" alt="Naruto" />
+      <img src="fast1.png" alt="Fast & Furious 1" />
+      <img src="fast2.png" alt="Fast & Furious 2" />
+      <img src="spiderman1.png" alt="Spiderman 1" />
+      <img src="spiderman2.png" alt="Spiderman 2" />
+      <img src="fast3.png" alt="Fast & Furious 3" />
+      <img src="iornman.png" alt="Iron Man" />
+      <img src="siderman3.png" alt="Spiderman 3" />
+      <img src="karate.png" alt="Karate Kid" />
+      <img src="batman.png" alt="Batman" />
+      <img src="shrek.png" alt="Shrek" />
+      <img src="longestyard.png" alt="The Longest Yard" />
+      <img src="creed3.png" alt="Creed III" />
+      <img src="blackpanther.png" alt="Pokemon" />
+      <img src="transformers.png" alt="Transformers" />
+      <img src="forestgump.png" alt="Forrest Gump" />
+    </section>
+
+    <!-- YouTube Video -->
+    <div class="moviebr">
+      <iframe 
+        width="1500" 
+        height="400" 
+        src="https://www.youtube.com/embed/4WKHNNtVbUM" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Gallery Section 2 -->
+    <section class="gallery-grid">
+      <img src="creed-ii-adonis-creed-boxing-movie-poster-aesthetic-wall-decor 1.png" alt="Creed II" />
+      <img src="New-Initial-D-the-Movie-Legend1-Awakening-poster 1.png" alt="Initial D" />
+      <img src="hulk.png" alt="Hulk" />
+      <img src="marvel.png" alt="Marvel Heroes" />
+      <img src="carsmovie.png" alt="Cars Movie" />
+      <img src="spiderman4.png" alt="Spiderman 4" />
+      <img src="sinner.png" alt="The Sinner" />
+      <img src="onepiece.png" alt="One Piece" />
+      <img src="godzilla.png" alt="Godzilla" />
+      <img src="bat.png" alt="Batman 2" />
+      <img src="Fast_and_Furious_Poster 1.png" alt="Fast & Furious Poster" />
+      <img src="hunterxhunter.png" alt="Hunter x Hunter" />
+      <img src="gran.png" alt="Gran Turismo" />
+      <img src="realsteel.png" alt="Real Steel" />
+      <img src="badboys.png" alt="Bad Boys" />
+      <img src="bigdaddy.png" alt="Big Daddy" />
+    </section>
+
+    <!-- Popup Script -->
+    <script>
+      function openPopup() {
+        document.getElementById("popup").style.display = "flex";
+      }
+      function closePopup() {
+        document.getElementById("popup").style.display = "none";
+      }
+      window.onload = function () {
+        openPopup
+      }

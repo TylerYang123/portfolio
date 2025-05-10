@@ -1,261 +1,423 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Body and Overall Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    margin: 0 40px;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: white;
+  margin: 0 40px;
+  padding: 0;
+  cursor: none;
+}
+
+/* Hide cursor on interactive elements */
+a,
+button,
+input,
+select,
+textarea,
+label {
+  cursor: none !important;
 }
 
 /* .milky: Center the image horizontally and vertically */
 .milky {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 300px;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
 }
 
 .milky img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;  /* Make sure the image covers the container */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /* Navbar Styling */
 .navbar {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #000000;
-    padding: 20px 30px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  padding: 20px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .navbar .logo a {
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .navbar .menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .navbar .menu-toggle .bar {
-    width: 25px;
-    height: 4px;
-    margin: 4px 0;
-    background-color: #fff;
+  width: 25px;
+  height: 4px;
+  margin: 4px 0;
+  background-color: #fff;
 }
 
 /* Nav Links Styling */
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 30px;
+  list-style: none;
+  display: flex;
+  gap: 30px;
 }
 
 .nav-links li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 8px 16px;
-    transition: background-color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
 }
 
 .nav-links a:hover {
-    background-color: #444;
-    border-radius: 4px;
+  background-color: #444;
+  border-radius: 4px;
 }
 
 /* Mobile Menu Styling */
 @media screen and (max-width: 768px) {
-    .navbar .menu-toggle {
-        display: flex;
-    }
-    
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background-color: #333;
-        width: 200px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    }
+  .navbar .menu-toggle {
+    display: flex;
+  }
 
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        padding: 15px;
-        text-align: right;
-    }
-
-    .nav-links a {
-        font-size: 20px;
-        padding: 12px;
-    }
-}
-body {
-    background-color: #000000; /* black background color */
-}
-/* CSS file */
-body {
-    color: white; /* All text on the page will be white */
-    background-color: #000000; /* Dark background to see white text */
-}
-
-h1 {
-    color: white; /* Specific header text color */
-}
-
-#about {
-    color: white; /* Makes text inside the about section white */
-    border: #fff;
-    
-}
-/* Reducing letter spacing to make text squished */
-/* Apply squished text style */
-.squished-text {
-    letter-spacing: -3px;  /* Adjust to make characters closer together */
-    word-spacing: -4px;    /* Adjust to make words closer together */
-}
-
-.container{
-  display: flex;
-    justify-content: right;
+  .nav-links {
+    display: none;
     flex-direction: column;
-    width: 30%;
-    margin-bottom: 50%;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #333;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 15px;
+    text-align: right;
+  }
+
+  .nav-links a {
+    font-size: 20px;
+    padding: 12px;
+  }
+
+
+  .footer .footer-links a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* ------------------- Header Image ------------------- */
+.milky {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+}
+
+.milky img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ------------------- About Section ------------------- */
+#about {
+  color: white;
+  border: 1px solid #fff;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+.text-section {
+  flex: 1;
+  max-width: 600px;
+  top: 200px;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-img, .volleyball-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-section, .image-section {
+    max-width: 100%;
+  }
+}
+
+/* ------------------- Gallery ------------------- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border: 3px solid white;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+/* ------------------- Popup ------------------- */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* ------------------- Footer ------------------- */
+.footer {
+  background: #080808;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  color: #fff;
+}
+
+.footer .social-icons a {
+  margin: 0 10px;
+  color: #555;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: #000;
+}
+
+.footer .footer-links {
+  margin: 20px 0;
+}
+
+.footer .footer-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  font-size: 13px;
+}
+
+/* ------------------- Utility ------------------- */
+.squished-text {
+  letter-spacing: -3px;
+  word-spacing: -4px;
+}
+
+.container {
+  padding: 2rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
   
 }
-.popup-overlay {
-    display: none; /* hidden by default */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  .popup-content {
-    background: white;
-    color: black;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    width: 300px;
-    position: relative;
-  }
-  
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 24px;
-    cursor: pointer;
-  }
 
-    .footer {
-        background: #080808;
-        padding: 40px 20px;
-        text-align: center;
-        border-top: 1px solid #ddd;
-      }
-      
-      .footer .social-icons a {
-        margin: 0 10px;
-        color: #555;
-        font-size: 20px;
-        text-decoration: none;
-        transition: color 0.3s;
-      }
-      
-      .footer .social-icons a:hover {
-        color: #000;
-      }
-      
-      .footer .footer-links {
-        margin: 20px 0;
-      }
-      
-      .footer .footer-links a {
-        margin: 0 15px;
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 14px;
-      }
-      
-      .footer .footer-links a:hover {
-        text-decoration: underline;
-      }
-      
-      .footer p {
-        color: #ffffff;
-        font-size: 13px;
-      }
-      
-      @media (max-width: 600px) {
-        .footer .footer-links a {
-          display: block;
-          margin: 10px 0;
-        }
-      }
-      
-      .custom-button {
-        padding: 12px 24px;
-        background-color: white;
-        color: black;
-        border: 2px solid white;
-        border-radius: 8px;
-        font-size: 18px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: background-color 0.3s ease, color 0.3s ease;
-      }
-      
-      .custom-button:hover {
-        background-color: black;
-        color: white;
-      }
-      .nav-logo {
-        height: 65px;
-      }
+.texthead {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 40px 0 0;
+}
 
-      .button-hi{
-      width: 15px;
-      height: 1px;
-        }
+/* ------------------- Buttons ------------------- */
+.custom-button,
+button {
+  padding: 12px 24px;
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-        .resume{
-          display: flex;
-          justify-items: center;
-        }
- 
+button:hover,
+.custom-button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* ------------------- Resume ------------------- */
+.resume, .spin {
+  display: flex;
+  justify-content: center;
+}
+
+.spin img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ------------------- Pokémon ------------------- */
+#pokemon-display {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+#pokemon-display img,
+#pokemon-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border: 2px solid gold;
+  border-radius: 10px;
+  background: #fff;
+}
+
+/* ------------------- Custom Cursor ------------------- */
+.cursor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgb(93, 1, 186);
+  box-shadow: 0 0 15px 5px rgba(187, 101, 241, 0.619);
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s linear;
+  z-index: 9999;
+}
+.rayquaza{
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border: 2px solid gold;
+  border-radius: 10px;
+  background: rgb(0, 0, 0);
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* space between photo and pokemon */
+  margin: 40px auto;
+  flex-wrap: wrap; /* allows stacking on small screens */
+   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.image-row {
+ display: flex;
+  justify-content: center; /* center both images */
+  align-items: center;     /* vertically align */
+  gap: 40px;               /* space between the two */
+  margin-top: 40px;
+}
+
+.profile-img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 349px; /* shift photo right */
+  border: 2px solid yellow;
+}
+
+#pokemon-img {
+  width: 150px;
+  height: 150px;
+  border: 2px solid yellow;
+  border-radius: 10px;
+  background: rgb(2, 2, 2);
+  margin-left: 150px; /* shift Pokémon left */
+}

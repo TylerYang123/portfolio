@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tyler Yang | About Me</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="style.js"></script>
+</head>
+<body>
+  <header>
+    <div class="milky">
+      <img src="Milky-Way 2 (3).png" alt="Milky Way Galaxy Header" />
+    </div>
+    <nav class="navbar">
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="aboutme.html">ABOUT ME</a></li>
+        <li><a href="music.html">MUSIC</a></li>
+        <li><a href="car.html">CARS</a></li>
+        <li><a href="movie.html">MOVIES</a></li>
+        <li><a href="project.html">PROJECTS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <div class="container about-content">
+      <div class="text-section">
+        <h3>Hey There!</h3>
+        <h1>I'm Tyler Yang</h1>
+        <p>
+          I'm a passionate web developer who loves creating intuitive, user-friendly websites.
+          With a background in coding and design, I specialize in front-end technologies like HTML and CSS.
+          When I’m not coding, you’ll find me gaming, building personal projects, or enjoying volleyball with friends.
+          I also love drawing, fishing, collecting cars, and collecting cards. My creative hobbies inspire my design work,
+          and I'm always looking for new ways to grow and improve.
+        </p>
+        <br>
+        <a href="resume.html"><button>View Resume</button></a>
+      </div>
+
+      <div class="image-section">
+       <div class="image-row">
+  <img src="tyler.png" class="profile-img" alt="Photo">
+  <img src="Rayquaza.webp" id="pokemon-img" alt="Pokemon">
+</div>
+
+        <div class="container">
+          <h1>🎲 Random Pokémon Generator</h1>
+          <br>
+          <button onclick="generatePokemon()">Generate Pokémon</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h3>Get In Touch</h3>
+    <br />
+    <h4>tyler.yang@student.cart.org</h4>
+    <h4>(559)-878-7362</h4>
+    <br />
+    <div class="footer-links">
+      <a href="home.html">HOME</a>
+      <a href="aboutme.html">ABOUT ME</a>
+      <a href="music.html">MUSIC</a>
+      <a href="car.html">CARS</a>
+      <a href="project.html">PROJECTS</a>
+    </div>
+    <p>&copy; 2025 Tyler Yang. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const pokemonList = [
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png"
+    ];
+
+    function generatePokemon() {
+      const img = document.getElementById("pokemon-img");
+      const randomIndex = Math.floor(Math.random() * pokemonList.length);
+      img.src = pokemonList[randomIndex];
+    }
+  </script>
+  <script>
+  const cursor = document.querySelector(".cursor");
+
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+  });
+</script>
+</body>
+</html>
+  
+
