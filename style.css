@@ -408,9 +408,10 @@ button:hover,
 .profile-img {
   width: 300px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 15px;
   margin-left: 349px; /* shift photo right */
   border: 2px solid yellow;
+  top: 300px;
 }
 
 #pokemon-img {
