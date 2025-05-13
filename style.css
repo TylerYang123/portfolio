@@ -438,6 +438,6 @@ align-items: flex-end;
 margin-top: -50px; /* Negative value moves it UP */
 transform: translateY(-50px); /* Moves up 50 pixels */
 position: absolute;
-top: 70%; /* Negative moves it UP */
-left: 10%;
+top: 77%; /* Negative moves it UP */
+left: 8%;
 }
