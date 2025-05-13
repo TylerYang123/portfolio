@@ -422,3 +422,22 @@ button:hover,
   background: rgb(2, 2, 2);
   margin-left: 150px; /* shift Pokémon left */
 }
+
+.bottombutton{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.gallery {
+
+display: flex;
+justify-content: center;
+align-items: flex-end;
+margin-top: -50px; /* Negative value moves it UP */
+transform: translateY(-50px); /* Moves up 50 pixels */
+position: absolute;
+top: 70%; /* Negative moves it UP */
+left: 10%;
+}
